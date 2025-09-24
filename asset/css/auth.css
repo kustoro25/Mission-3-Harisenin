@@ -1,0 +1,271 @@
+/* css/auth.css */
+.auth-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.auth-title {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-subtitle {
+  color: #64748b;
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.required-star {
+  color: #ef4444;
+}
+
+.form-input {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Styling untuk select jenis kelamin */
+.gender-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.gender-option {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+}
+
+.gender-option input[type="radio"] {
+  margin: 0;
+}
+
+/* Styling untuk input telepon dengan bendera */
+.phone-input-container {
+  position: relative;
+  display: flex;
+}
+
+.country-code {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  background: #f8fafc;
+  border: 2px solid #e5e7eb;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  font-family: "DM Sans", sans-serif;
+  white-space: nowrap;
+}
+
+.country-flag {
+  width: 20px;
+  height: 15px;
+  background: linear-gradient(to bottom, red 50%, white 50%);
+  border: 1px solid #ddd;
+}
+
+.phone-input {
+  border-radius: 0 8px 8px 0;
+  flex: 1;
+}
+
+.auth-button {
+  background-color: #3ecf4c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  border: 1px solid #030303;
+}
+
+.auth-button:hover {
+  background-color: #059669;
+}
+
+.secondary-button {
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  color: #3ecf4c;
+  border: 1px solid #030303;
+}
+
+.secondary-button:hover {
+  background-color: green;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.divider-text {
+  padding: 0 15px;
+}
+
+/* Tombol Google dengan SVG */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: white;
+  color: #757575;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Roboto", "DM Sans", sans-serif;
+  width: 100%;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.google-btn:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: #757575;
+}
+
+.google-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.auth-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design untuk auth pages */
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 20px;
+  }
+
+  .auth-card {
+    padding: 30px;
+  }
+
+  .auth-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 20px;
+  }
+
+  .auth-title {
+    font-size: 1.5rem;
+  }
+
+  .gender-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .google-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
